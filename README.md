@@ -6,6 +6,7 @@
 - @PropertySource("classpath:/application.properties")
 - @ComponentScan(basePackage = {"com.your.package.name"})
 - @Component
+- @Primary
 - @Service
 - @Repository
 
@@ -16,7 +17,7 @@
 - @Profile("example-dev-or-prod")
 
 ## Variable / Constructor
-- @Autowire
+- @Autowired
 
 ## Run configurations (set as environment variable)
 - spring.profiles.active
