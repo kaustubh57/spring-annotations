@@ -32,7 +32,7 @@
 
 <hr>
 
-# Bean Scone
+# <a name="bean-scope"></a>Bean Scone
 - singleton
 - prototype
 - request
