@@ -6,14 +6,15 @@
 - @PropertySource("classpath:/application.properties")
 - @ComponentScan(basePackage = {"com.your.package.name"})
 - @Component
+- [@Scope](#bean-scope)
 - @Primary
 - @Qualifier
 - @Service
 - @Repository
 
 ## Method Level
-- [@Bean](#bean-scope)
-- @Scope("singelton *or* prototype *or* session *or* request")
+- @Bean
+- [@Scope](#bean-scope)("singelton *or* prototype *or* session *or* request")
 - @Value("${property.key.from.property.file}")
 - @Profile("example-dev-or-prod")
 
@@ -33,10 +34,10 @@
 <hr>
 
 # <a name="bean-scope"></a>Bean Scope
-- singleton (default)
-- prototype
-- request
-- session
+- singleton (default) - One instance per Spring Context
+- prototype - New bean whenever requested
+- request - Once bean per HTTP request
+- session - One bean per HTTP session
 
 <hr>
 
