@@ -32,8 +32,8 @@
 
 <hr>
 
-# <a name="bean-scope"></a>Bean Scone
-- singleton
+# <a name="bean-scope"></a>Bean Scope
+- singleton (default)
 - prototype
 - request
 - session
