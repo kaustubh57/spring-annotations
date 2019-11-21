@@ -30,6 +30,7 @@
 
 
 <hr>
-## <span style="color:blue">_Check this_</span>
+
+### *Check this*
 - @Service
 - @Component
