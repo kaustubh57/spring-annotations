@@ -7,17 +7,19 @@
 - @ComponentScan(basePackage = {"com.your.package.name"})
 - @Component
 - @Primary
+- @Qualifier
 - @Service
 - @Repository
 
 ## Method Level
-- @Bean
-- @Scope("singelton _or_ prototype _or_ session _or_ request")
+- [@Bean](#bean-scope)
+- @Scope("singelton *or* prototype *or* session *or* request")
 - @Value("${property.key.from.property.file}")
 - @Profile("example-dev-or-prod")
 
 ## Variable / Constructor
 - @Autowired
+- @Qualifier
 
 ## Run configurations (set as environment variable)
 - spring.profiles.active
@@ -28,6 +30,13 @@
 - @Value("#{new Boolean(environment['spring.profiles.active']=='dev')}")
 	- Based on spring expression it will determine value for the variable
 
+<hr>
+
+# Bean Scone
+- singleton
+- prototype
+- request
+- session
 
 <hr>
 
