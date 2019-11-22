@@ -31,16 +31,25 @@
 - @Value("#{new Boolean(environment['spring.profiles.active']=='dev')}")
 	- Based on spring expression it will determine value for the variable
 
-<hr>
-
-# <a name="bean-scope"></a>Bean Scope
+## <a name="bean-scope"></a>Bean Scope
 - singleton (default) - One instance per Spring Context
 - prototype - New bean whenever requested
 - request - Once bean per HTTP request
 - session - One bean per HTTP session
 
-<hr>
+## CDI: context and dependency injection (javax.inject)
+```
+  <dependency>
+    <groupId>javax.inject</groupId>
+    <artifactId>javax.inject</artifactId>
+    <version>1</version>
+  </dependency>
+```
+- @Inject
+- @Named
+- @Provider
+- @Qualifier
+- @Scope
+- @Singleton
 
-### *Check this*
-- @Service
-- @Component
+<hr>
