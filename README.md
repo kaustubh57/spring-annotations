@@ -6,7 +6,7 @@
 - @PropertySource("classpath:/application.properties")
 - @ComponentScan(basePackage = {"com.your.package.name"})
 - @Component
-- [@Scope](#bean-scope)
+- [@Scope](#bean-scope)(*value* = ConfigurableBeanFactory.SCOPE_PROTOTYPE, *proxyMode* = ScopedProxyMode.TARGET_CLASS)
 - @Primary
 - @Qualifier
 - @Service
