@@ -1,16 +1,17 @@
 # Sprint Annotations
 
 ## Class Level
-- @Configuration
-- @Import(ObjectName.class)
-- @PropertySource("classpath:/application.properties")
-- @ComponentScan(basePackage = {"com.your.package.name"})
 - @Component
 - [@Scope](#bean-scope)(*value* = ConfigurableBeanFactory.SCOPE_PROTOTYPE, *proxyMode* = ScopedProxyMode.TARGET_CLASS)
 - @Primary
 - @Qualifier
 - @Service
 - @Repository
+- @Configuration
+- @ComponentScan(basePackage = {"com.your.package.name"})
+- @Controller
+- @Import(ObjectName.class)
+- @PropertySource("classpath:/application.properties")
 
 ## Method Level
 - @Bean
