@@ -11,7 +11,7 @@
 - @ComponentScan(basePackage = {"com.your.package.name"})
 - @Controller
 - @Import(ObjectName.class)
-- @PropertySource("classpath:/application.properties")
+- @PropertySource("classpath:application.properties")
 
 ## Method Level
 - @Bean
