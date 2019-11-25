@@ -1,4 +1,4 @@
-# Sprint Annotations
+# Spring / Spring Boot Annotations
 
 ## Class Level
 - @Component
@@ -10,6 +10,7 @@
 - @Configuration
 - @ComponentScan(basePackage = {"com.your.package.name"})
 - @Controller
+- @RestController
 - @Import(ObjectName.class)
 - @PropertySource("classpath:application.properties")
 
