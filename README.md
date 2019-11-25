@@ -22,6 +22,7 @@
 ## Variable / Constructor
 - @Autowired
 - @Qualifier
+- @Value
 
 ## Run configurations (set as environment variable)
 - spring.profiles.active
